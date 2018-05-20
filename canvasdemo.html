@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>笑脸</title>
+</head>
+<body>
+<canvas id="myCanvas" width="600px" height="600px" style="border: 1px  #000000 solid;"></canvas>
+</body>
+</html>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var huabi = c.getContext("2d");
+
+    huabi.beginPath();
+    huabi.arc(250,250,200,0,2*Math.PI);
+    huabi.stroke();
+
+    huabi.beginPath();
+    huabi.arc(150,200,30,0,2*Math.PI);
+    huabi.stroke();
+
+    huabi.beginPath();
+    huabi.arc(340,200,30,0,2*Math.PI);
+    huabi.stroke();
+
+    huabi.beginPath();
+    huabi.arc(250,330,50,0,1*Math.PI);
+    huabi.stroke();
+
+    huabi.beginPath();
+    huabi.arc(340,210,20,0,2*Math.PI);
+    huabi.fill();
+    huabi.stroke();
+
+    huabi.beginPath();
+    huabi.arc(150,210,20,0,2*Math.PI);
+    huabi.fill();
+    huabi.stroke();
+
+    huabi.moveTo(240,250);
+    huabi.lineTo(230,290);
+    huabi.stroke();
+
+    huabi.moveTo(230,290);
+    huabi.lineTo(280,250);
+    huabi.stroke();
+    
+</script>
